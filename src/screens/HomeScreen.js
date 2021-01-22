@@ -1,4 +1,4 @@
-import { Body, Button, Container, Content, Header, Icon, Left, Right, Title } from 'native-base';
+import { Body, Button, Container, Content, Header, Left, Right, Title } from 'native-base';
 import * as React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
@@ -10,11 +10,11 @@ export default function HomeScreen({navigation}) {
         <Header style={{backgroundColor:'#f3a81f'}}>
           <Left>
             <Button transparent onPress={()=> navigation.dispatch(DrawerActions.openDrawer())}>
-              <Ionicons name="menu" size={32} color='#fff'/>
+              <Ionicons name="menu" size={56} color='#fff'/>
             </Button>
           </Left>
-          <Body style={{flex: 1, alignItems:'center'}}>
-            <Title style={{fontFamily:'System'}}>Dinosaurio App</Title>
+          <Body>
+            <Title>Dinosaurio App</Title>
           </Body>
           <Right/>
         </Header>
