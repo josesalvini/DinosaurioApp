@@ -296,7 +296,7 @@ export default {
   },
 
   // Title
-  titleFontfamily: platform === PLATFORM.IOS ? 'System' : 'Roboto_medium',
+  titleFontfamily: platform === PLATFORM.IOS ? 'System' : 'Roboto',
   titleFontSize: platform === PLATFORM.IOS ? 17 : 19,
   subTitleFontSize: platform === PLATFORM.IOS ? 11 : 14,
   subtitleColor: platform === PLATFORM.IOS ? '#8e8e93' : '#FFF',

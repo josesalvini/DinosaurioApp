@@ -1,14 +1,15 @@
 import * as React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
-import { createDrawerNavigator, DrawerItemList } from '@react-navigation/drawer';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createStackNavigator } from '@react-navigation/stack';
+
 
 import HomeScreen from '../screens/HomeScreen';
 import NotificationsScreen from '../screens/NotificationsScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 
 import { Ionicons } from '@expo/vector-icons';
-import SideBar from '../components/CustomDrawer';
+import SideBar from './CustomDrawer';
 
 const colorTheme = '#f3a81f'
 const Drawer = createDrawerNavigator();
@@ -52,12 +53,12 @@ function AppDrawer() {
 
 const AppStack = () => {
   return (
-    <Stack.Navigator initialRouteName="AppDrawer" headerMode='none'>
-      <Stack.Screen name="AppDrawer" component={AppDrawer} />
-      <Stack.Screen name="Home" component={HomeScreen} />
-      <Stack.Screen name="Notifications" component={NotificationsScreen} />
-      <Stack.Screen name="Settings" component={SettingsScreen} />
-    </Stack.Navigator>
+      <Stack.Navigator style={{fontFamily:'System'}} initialRouteName="AppDrawer" headerMode='none'>
+        <Stack.Screen name="AppDrawer" component={AppDrawer} />
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Notifications" component={NotificationsScreen} />
+        <Stack.Screen name="Settings" component={SettingsScreen} />
+      </Stack.Navigator>
   );
 };
 

@@ -17,14 +17,14 @@ return (
         <Header style={{backgroundColor:'#f3a81f', borderBottomWidth:0}}>
             <Right>
                 <Button transparent onPress={()=>props.navigation.dispatch(DrawerActions.closeDrawer())}>
-                    <Ionicons name="menu" size={32} color='#fff'/>
+                    <Ionicons name="close" size={32} color='#fff'/>
                 </Button>
             </Right>
         </Header>
-        <Content>
+        <Content contentContainerStyle={{flex: 1}}>
             <ListItem style={{ borderBottomWidth:0}} thumbnail>
                 <Left>
-                    <Thumbnail style={{ width: 80, height: 80, }} source={require('../assets/userprofile.png')} />
+                    <Thumbnail style={{ width: 80, height: 80, }} source={require('../images/userprofile.png')} />
                 </Left>
                 <Body style={{ borderBottomWidth:0}}>
                     <H3>Gómez Salvini José Emilio</H3>
